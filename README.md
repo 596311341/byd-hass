@@ -1,3 +1,5 @@
+> **Deprecated:** This project is deprecated in favor of https://github.com/jkaberg/hass-byd-vehicle
+
 # BYD-HASS
 
 BYD-HASS is a small Go program that turns data from the Diplus API into MQTT messages that Home Assistant can understand, and (optionally) telemetry for A Better Route Planner (ABRP).  It is built as a single static binary so it can run in the car's infotainment using Termux.
@@ -57,6 +59,12 @@ To stop all running processes (useful before reconfiguring):
 
 ```bash
 ./install.sh cleanup
+```
+
+To uninstall and remove all files, scripts, and logs created by the installer:
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/jkaberg/byd-hass/main/uninstall.sh)
 ```
 
 ## Configuration
